@@ -3,6 +3,15 @@ name = "rs-csv2parquet"
 version = "0.1.0"
 edition = "2024"
 
+description = "Converts a csv file to a parquet."
+license = "Apache-2.0"
+repository = "https://github.com/takanoriyanagitani/rs-csv2parquet"
+homepage = "https://github.com/takanoriyanagitani/rs-csv2parquet"
+documentation = "https://docs.rs/rs-csv2parquet/latest"
+keywords = ["csv", "parquet", "arrow", "conversion"]
+
+categories = [ "command-line-utilities" ]
+
 [lints.rust]
 unsafe_code = "forbid"
 

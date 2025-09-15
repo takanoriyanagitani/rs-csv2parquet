@@ -1,0 +1,38 @@
+[package]
+name = "rs-csv2parquet"
+version = "0.1.0"
+edition = "2024"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
+
+[dependencies.arrow]
+version = "56"
+default-features = false
+features = [
+	"csv",
+]
+
+[dependencies.parquet]
+version = "56"
+default-features = false
+features = [
+	"arrow",
+]
+
+[dependencies.clap]
+version = "4"
+default-features = false
+features = [
+	"color",
+	"error-context",
+	"help",
+	"std",
+	"suggestions",
+	"usage",
+	"derive",
+]
